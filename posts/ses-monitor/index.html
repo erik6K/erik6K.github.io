@@ -6,7 +6,8 @@ Erik's Projects
 </title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Project completed for the State Emergency Service, during xxxxxxx at the University of Western Australia in which groups of students studying the Computer Science major were placed into projects with real clients. etc&amp;hellip;.">
+<meta name=description content="The remote monitoring hardware (grey) and a prototype antenna with amplifier for sensing the 240Vac (black).  Project completed for the State Emergency Service Communications Unit, during CITS3200 Professional Computing at the University of Western Australia. During this unit, groups of students studying the Computer Science major were placed into university-sourced industry projects involving real clients.
+The SES often has to respond to large scale bushfire emergencies in very remote locations, which are often radio blackspots.">
 <meta name=keywords content>
 <meta name=robots content="noodp">
 <link rel=canonical href=https://erik6K.github.io/posts/ses-monitor/>
@@ -22,9 +23,11 @@ Erik's Projects
 <link href=https://erik6K.github.io/assets/fonts/Inter-BoldItalic.woff2 rel=preload type=font/woff2 as=font crossorigin>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="SES Remote Monitor">
-<meta name=twitter:description content="Project completed for the State Emergency Service, during xxxxxxx at the University of Western Australia in which groups of students studying the Computer Science major were placed into projects with real clients. etc&mldr;.">
+<meta name=twitter:description content="The remote monitoring hardware (grey) and a prototype antenna with amplifier for sensing the 240Vac (black).  Project completed for the State Emergency Service Communications Unit, during CITS3200 Professional Computing at the University of Western Australia. During this unit, groups of students studying the Computer Science major were placed into university-sourced industry projects involving real clients.
+The SES often has to respond to large scale bushfire emergencies in very remote locations, which are often radio blackspots.">
 <meta property="og:title" content="SES Remote Monitor">
-<meta property="og:description" content="Project completed for the State Emergency Service, during xxxxxxx at the University of Western Australia in which groups of students studying the Computer Science major were placed into projects with real clients. etc&mldr;.">
+<meta property="og:description" content="The remote monitoring hardware (grey) and a prototype antenna with amplifier for sensing the 240Vac (black).  Project completed for the State Emergency Service Communications Unit, during CITS3200 Professional Computing at the University of Western Australia. During this unit, groups of students studying the Computer Science major were placed into university-sourced industry projects involving real clients.
+The SES often has to respond to large scale bushfire emergencies in very remote locations, which are often radio blackspots.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://erik6K.github.io/posts/ses-monitor/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-12-04T21:46:17+11:00">
@@ -67,8 +70,19 @@ Erik's Projects
 </span>
 </div>
 <div class=post-content>
-<p>Project completed for the State Emergency Service, during xxxxxxx at the University of Western Australia in which groups of students studying the Computer Science major were placed into projects with real clients.
-etc&mldr;.</p>
+<figure class=center>
+<img src=both.jpg style=border-radius:8px>
+<figcaption class=right style=color:#000>The remote monitoring hardware (grey) and a prototype antenna with amplifier for sensing the 240Vac (black).</figcaption>
+</figure>
+<p>Project completed for the State Emergency Service Communications Unit, during CITS3200 Professional Computing at the University of Western Australia. During this unit, groups of students studying the Computer Science major were placed into university-sourced industry projects involving real clients.</p>
+<p>The SES often has to respond to large scale bushfire emergencies in very remote locations, which are often radio blackspots. In these sitations, maintaining constant communication is vital, and so the SES Communications Unit (SES CSU) sets up remote radio repeaters in these blackspots. The repeaters are powered primarily by a diesel generator, but also have a 12V battery as backup, which is sometimes connected to a solar panel. They are often left unattended for extended periods of time, and have no way of reporting the current status of the generator, or the battery&rsquo;s charge level. SES CSU would only become aware of a repeater power faliure when that repeater ceased to function, which was far too late and could result in a potentially dangerous situation. The project given to us was to design a hardware device which monitored the primary and secondary power sources of the repeater and reported the data (generator status and battery voltage) over the internet to be displayed on a webpage.</p>
+<p>The project was multifaceted in the sense that not only was there a need to design the actual embedded system, but the logistics of getting the data to the webpage had to be thought out, and the webpage itself needed to be built and hosted somewhere that presented a good cost-to-benefit ratio for the client. Not to mention the need to create extensive documentation, progress reports, and technical documents.</p>
+<figure class=center>
+<img src=monitor_close.jpg style=border-radius:8px>
+<figcaption class=right style=color:#000>The carrier board and MKR1010 in their enclosure.</figcaption>
+</figure>
+<p>The device which was delivered was based on the Arduino MKR1010 development board, which incorperated a WiFi module. It detects the presense of 50Hz 240Vac from the generator using FFT analysis, in order to keep the device totally isolated from mains, and also samples the battery voltage at regular intervals. This data is then reported to Microsoft Azure&rsquo;s IoT Hub over the internet. The device connects to a WiFi hotspot in order to access the internet.</p>
+<p>I designed the carrier board for the Arduino MKR1010 and wrote a majority of the firmware. The github repository for the project can be found <a href=https://github.com/erik6K/remote-monitor>here</a>.</p>
 </div>
 <div class=pagination>
 <div class=pagination__title>

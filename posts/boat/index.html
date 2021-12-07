@@ -6,7 +6,7 @@ Erik's Projects
 </title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Group project completed for xxxxxx at the University of Western Australia. I designed and assembled the hardware, and wrote firmware for the Arduino (C++). The firmware implemented a simple PI controller which stabilised the heading of the boat by independently controlling the speed of the boat&amp;rsquo;s two motors. Current heading data was obtained from a compass sensor IC, which communicated with the Arduino over I2C, using a premade library which processed the incoming data and returned an absolute bearing.">
+<meta name=description content="The dissasembled boat, with 2 prototype control boards which had different compass IC&amp;rsquo;s mounted.  Group project completed for ENSC3020 Digital Embedded Systems at the University of Western Australia. The task was to design a boat which would be placed at one side of a pool and, at power on, drive foward in as straight a line as possible until it detected an obstacle (opposite edge of the pool), at which point it would execute a 180 degree turn and then drive again in a straight line until it reached its starting position.">
 <meta name=keywords content>
 <meta name=robots content="noodp">
 <link rel=canonical href=https://erik6K.github.io/posts/boat/>
@@ -22,9 +22,9 @@ Erik's Projects
 <link href=https://erik6K.github.io/assets/fonts/Inter-BoldItalic.woff2 rel=preload type=font/woff2 as=font crossorigin>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Self-Driving Boat">
-<meta name=twitter:description content="Group project completed for xxxxxx at the University of Western Australia. I designed and assembled the hardware, and wrote firmware for the Arduino (C++). The firmware implemented a simple PI controller which stabilised the heading of the boat by independently controlling the speed of the boat&rsquo;s two motors. Current heading data was obtained from a compass sensor IC, which communicated with the Arduino over I2C, using a premade library which processed the incoming data and returned an absolute bearing.">
+<meta name=twitter:description content="The dissasembled boat, with 2 prototype control boards which had different compass IC&rsquo;s mounted.  Group project completed for ENSC3020 Digital Embedded Systems at the University of Western Australia. The task was to design a boat which would be placed at one side of a pool and, at power on, drive foward in as straight a line as possible until it detected an obstacle (opposite edge of the pool), at which point it would execute a 180 degree turn and then drive again in a straight line until it reached its starting position.">
 <meta property="og:title" content="Self-Driving Boat">
-<meta property="og:description" content="Group project completed for xxxxxx at the University of Western Australia. I designed and assembled the hardware, and wrote firmware for the Arduino (C++). The firmware implemented a simple PI controller which stabilised the heading of the boat by independently controlling the speed of the boat&rsquo;s two motors. Current heading data was obtained from a compass sensor IC, which communicated with the Arduino over I2C, using a premade library which processed the incoming data and returned an absolute bearing.">
+<meta property="og:description" content="The dissasembled boat, with 2 prototype control boards which had different compass IC&rsquo;s mounted.  Group project completed for ENSC3020 Digital Embedded Systems at the University of Western Australia. The task was to design a boat which would be placed at one side of a pool and, at power on, drive foward in as straight a line as possible until it detected an obstacle (opposite edge of the pool), at which point it would execute a 180 degree turn and then drive again in a straight line until it reached its starting position.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://erik6K.github.io/posts/boat/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-12-04T21:28:04+11:00">
@@ -67,7 +67,15 @@ Erik's Projects
 </span>
 </div>
 <div class=post-content>
-<p>Group project completed for xxxxxx at the University of Western Australia. I designed and assembled the hardware, and wrote firmware for the Arduino (C++). The firmware implemented a simple PI controller which stabilised the heading of the boat by independently controlling the speed of the boat&rsquo;s two motors. Current heading data was obtained from a compass sensor IC, which communicated with the Arduino over I2C, using a premade library which processed the incoming data and returned an absolute bearing.</p>
+<figure class=center>
+<img src=boat.jpg style=border-radius:8px>
+<figcaption class=right style=color:#000>The dissasembled boat, with 2 prototype control boards which had different compass IC&rsquo;s mounted.</figcaption>
+</figure>
+<p>Group project completed for ENSC3020 Digital Embedded Systems at the University of Western Australia. The task was to design a boat which would be placed at one side of a pool and, at power on, drive foward in as straight a line as possible until it detected an obstacle (opposite edge of the pool), at which point it would execute a 180 degree turn and then drive again in a straight line until it reached its starting position. The control of the boat was to be performed by an Arduino Nano, however the rest of the design was up to us. I designed and manufactured the carrier board for the Arduino, and wrote its firmware. The firmware implemented a simple PI controller which stabilised the heading of the boat by independently controlling the speed of the boat&rsquo;s two motors. Current heading data was obtained from a compass sensor IC, which communicated with the Arduino over I2C, using a premade library which processed the incoming data and returned an absolute bearing.</p>
+<figure class=center>
+<img src=realpcb.jpg style=border-radius:8px>
+<figcaption class=right style=color:#000>Closeup of one of the control boards.</figcaption>
+</figure>
 </div>
 <div class=pagination>
 <div class=pagination__title>
