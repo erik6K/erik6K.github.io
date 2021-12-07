@@ -27,7 +27,7 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "Erik's Projects"
+    title = "Erik's Electronics Projects"
     subtitle = ""
     keywords = ""
     copyright = ""
@@ -44,19 +44,19 @@ paginate = 5
     # lastModDisplay = ""
 
     [languages.en.params.logo]
-      logoText = "Erik's Projects"
+      logoText = "Erik's Electronics Projects"
       logoHomeLink = "/"
     # or
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+#    [languages.en.menu]
+#      [[languages.en.menu.main]]
+#        identifier = "about"
+#        name = "About"
+#        url = "/about"
+#      [[languages.en.menu.main]]
+#        identifier = "showcase"
+#        name = "Showcase"
+#        url = "/showcase"
