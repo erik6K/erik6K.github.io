@@ -2,8 +2,8 @@
 title: "Digital Storage Oscilloscope"
 date: 2021-12-04T22:07:36+11:00
 draft: false
-#cover: "bench.jpg"
-#useRelativeCover: true
+cover: "bench.jpg"
+useRelativeCover: true
 ---
 
 {{< figure src="bench.jpg" alt="" position="center" style="border-radius: 8px;" caption="DSO on the test bench, sampling a 20 kHz sine wave." captionPosition="right" captionStyle="color: black;" >}}
