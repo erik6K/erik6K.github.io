@@ -1,0 +1,16 @@
+&-cover {
+    margin: 40px -50px;
+    width: 400px;
+    max-width: 400px;
+
+    img {
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+    }
+
+    @media (--tablet) {
+      margin: 20px 0;
+      width: 100%;
+    }
+  }
