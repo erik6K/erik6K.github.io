@@ -12,4 +12,4 @@ In my own time I develop and build modular synthesizer modules. I initially star
 
 {{< figure src="mods_back.jpg" alt="Back of modules" position="center" style="border-radius: 8px;" caption="It wouldn't be a good prototype without some bodges!" captionPosition="right" captionStyle="color: black;" >}}
 
-{{< figure src="vca_final.jpg" alt="Finished product" position="center" style="border-radius: 8px;" caption="From prototype to finished product" captionPosition="right" captionStyle="color: black;" >}}
+{{< figure src="vca_final.jpg" alt="Finished product" position="center" style="border-radius: 8px;" caption="From prototype to finished product." captionPosition="right" captionStyle="color: black;" >}}
